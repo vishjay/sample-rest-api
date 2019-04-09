@@ -4,8 +4,9 @@
   "description": "Simple rest api with endpoints showcasing the functionality of major HTTP verbs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon server.js"
+    "test": "standard",
+    "start": "nodemon server.js",
+    "fix" : "standard --fix"
   },
   "author": "Isuru Jayathilake",
   "license": "ISC",
@@ -14,5 +15,8 @@
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
   }
 }
