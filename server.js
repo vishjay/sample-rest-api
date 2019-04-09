@@ -115,17 +115,14 @@ app.put('/api/movies/:id', (req, res) => {
 //removes a movie given the id 
 app.delete('/api/movies/:id', (req, res) => {
 
-    // var existingMovie = lodash.filter(movies, m => m.id === req.params.id)[0];
-    // if (existingMovie) {
+    lodash.remove(movies, {
+        id:  req.params.id
+    });
 
-    //     movies.remove(existingMovie);
-    // }
-
-    
-    // res.send({
-    //     moviesCount: movies.length,
-    //     removedMovie : existingMovie
-    // });
+    res.send({
+        moviesCount: movies.length,
+        updatedMovieList : movies
+    })
 
 });
 
