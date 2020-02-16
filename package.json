@@ -4,9 +4,9 @@
   "description": "Simple rest api with endpoints showcasing the functionality of major HTTP verbs.",
   "main": "index.js",
   "scripts": {
-    "test": "standard",
+    "test": "mocha",
     "start": "nodemon server.js",
-    "fix" : "standard --fix"
+    "fix": "standard --fix"
   },
   "author": "Isuru Jayathilake",
   "license": "ISC",
@@ -17,6 +17,8 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "standard": "^12.0.1"
+    "standard": "^12.0.1",
+    "mocha": "^7.0.1",
+    "supertest": "^4.0.2"
   }
 }
