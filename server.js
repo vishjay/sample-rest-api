@@ -114,7 +114,7 @@ app.delete('/api/movies/:id', (req, res) => {
 // creates the server and starts listening.
 app.listen(3000, () => {
   console.log('Server started and is accessible on http://localhost:3000')
-  console.log('some logs for testing')
+  console.log('some logs for testing -changed')
 })
 
 module.exports = app
