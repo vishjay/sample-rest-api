@@ -4,7 +4,7 @@
   "description": "Simple rest api with endpoints showcasing the functionality of major HTTP verbs.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --exit",
     "start": "nodemon server.js",
     "fix": "standard --fix"
   },
